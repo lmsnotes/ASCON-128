@@ -1,0 +1,105 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020 Linux 3.10.0-1160.119.1.el7.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -L LIB_RTL LIB_BENCH.ascon_top_tb 
+# Start time: 14:05:30 on May 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fsm(fast)".
+# ** Warning: ./SRC/RTL/permutation_xor.sv(89): (vopt-2685) [TFMPC] - Too few port connections for 'rt'.  Expected 6, found 5.
+# ** Warning: ./SRC/RTL/permutation_xor.sv(89): (vopt-2718) [TFMPC] - Missing connection for port 'precedent_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading LIB_RTL.ascon_pack(fast)
+# Loading work.ascon_top_tb(fast)
+# Loading LIB_RTL.ascon_top(fast)
+# Loading LIB_RTL.fsm(fast)
+# Loading LIB_RTL.permutation_xor(fast)
+# Loading LIB_RTL.xor_up(fast)
+# Loading LIB_RTL.registre_cipher(fast)
+# Loading LIB_RTL.constant_add(fast)
+# Loading LIB_RTL.substitution_layer(fast)
+# Loading LIB_RTL.sbox(fast)
+# Loading LIB_RTL.diffusion_layer(fast)
+# Loading LIB_RTL.xor_down(fast)
+# Loading LIB_RTL.registre_tag(fast)
+# Loading LIB_RTL.state_registre(fast)
+# Loading LIB_RTL.counter_double_init(fast)
+add wave -position insertpoint sim:/ascon_top_tb/*
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading LIB_RTL.ascon_pack(fast)
+# Loading work.ascon_top_tb(fast)
+# Loading LIB_RTL.ascon_top(fast)
+# Loading LIB_RTL.fsm(fast)
+# Loading LIB_RTL.permutation_xor(fast)
+# Loading LIB_RTL.xor_up(fast)
+# Loading LIB_RTL.registre_cipher(fast)
+# Loading LIB_RTL.constant_add(fast)
+# Loading LIB_RTL.substitution_layer(fast)
+# Loading LIB_RTL.sbox(fast)
+# Loading LIB_RTL.diffusion_layer(fast)
+# Loading LIB_RTL.xor_down(fast)
+# Loading LIB_RTL.registre_tag(fast)
+# Loading LIB_RTL.state_registre(fast)
+# Loading LIB_RTL.counter_double_init(fast)
+run
+add wave -position insertpoint sim:/ascon_top_tb/ascon_top_u/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading LIB_RTL.ascon_pack(fast)
+# Loading work.ascon_top_tb(fast)
+# Loading LIB_RTL.ascon_top(fast)
+# Loading LIB_RTL.fsm(fast)
+# Loading LIB_RTL.permutation_xor(fast)
+# Loading LIB_RTL.xor_up(fast)
+# Loading LIB_RTL.registre_cipher(fast)
+# Loading LIB_RTL.constant_add(fast)
+# Loading LIB_RTL.substitution_layer(fast)
+# Loading LIB_RTL.sbox(fast)
+# Loading LIB_RTL.diffusion_layer(fast)
+# Loading LIB_RTL.xor_down(fast)
+# Loading LIB_RTL.registre_tag(fast)
+# Loading LIB_RTL.state_registre(fast)
+# Loading LIB_RTL.counter_double_init(fast)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End of computation at 1471.00000 ns
+# Computed ciphertext is 17e1e21263792197d30faeea29bd67c9c1495620515b13c0ee02b8fad31121c9c1495620515b13c0ee02b8fad31121
+# Expected ciphertext is 42b995a03c96c3611bbd350f39ff3a4217e1e21263792197d30faeea29bd67c9c1495620515b13c0ee02b8fad31121
+# Computed tag is 470bee3fe021df785b8cc07303b4e35a
+# Expected tag is f366f456cb2976594eb3452ce34318db
+run
+# ** Note: $finish    : SRC/BENCH/ascon_top_tb.sv(139)
+#    Time: 1571 ns  Iteration: 0  Instance: /ascon_top_tb
+# 1
+# Break in NamedBeginStat main at SRC/BENCH/ascon_top_tb.sv line 139
+# End time: 14:33:50 on May 15,2025, Elapsed time: 0:28:20
+# Errors: 0, Warnings: 2
