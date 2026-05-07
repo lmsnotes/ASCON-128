@@ -9,7 +9,7 @@ The BENCH folder features all codes linked to implementing and testing of the ec
 The RTL part contains the hardware design of the ASCON-128 encryption algorithm. 
 It describes the system architecture and implements all functional modules such as :
 - Permutation (simple and XOR)
-- S-bo
+- S-box
 - Diffusion layer
 - Finite state machine (FSM)
 - Registers (which allow to store the constant variables)
